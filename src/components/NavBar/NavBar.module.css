@@ -1,0 +1,52 @@
+.navbar_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1.5rem 0;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar_logo {
+  transition: all 250ms;
+  justify-self: flex-start;
+  margin-right: auto;
+}
+
+.navbar_logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar_link {
+  text-decoration: none;
+}
+
+.navbar_item {
+  transition: all 250ms;
+  position: relative;
+}
+
+.navbar_item::before {
+  transition: all 250ms;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  bottom: -0.2rem;
+  opacity: 0;
+  border-radius: 0.2rem;
+  left: -40%;
+  background-color: #6cb86a99;
+}
+
+.navbar_item:hover {
+  transform: scale(1.1) translateY(-2px);
+}
+
+.navbar_item:hover::before {
+  left: 0;
+  opacity: 1;
+  background-color: #6cb86a;
+}

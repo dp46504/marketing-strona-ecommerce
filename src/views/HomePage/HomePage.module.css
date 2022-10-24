@@ -1,0 +1,33 @@
+.image {
+  transition: all 250ms;
+  width: 300px;
+  height: 300px;
+  padding: 2rem;
+}
+
+.image_use_case {
+  transition: all 250ms;
+  width: 450px;
+  aspect-ratio: 1.5;
+  padding: 2rem;
+}
+
+.image:hover {
+  transform: translateX(0.5rem) translateY(-0.2rem) scale(1.02);
+}
+
+.first_row_text {
+  text-align: center;
+}
+
+.word_anim {
+  transition: all 250ms;
+  display: inline-block;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.word_anim:hover {
+  transform: translateY(-0.5rem);
+  filter: contrast(2);
+}
