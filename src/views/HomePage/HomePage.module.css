@@ -5,6 +5,31 @@
   padding: 2rem;
 }
 
+.container {
+}
+
+.row {
+  scroll-snap-align: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.row-enter {
+  opacity: 0;
+}
+.row-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.row-exit {
+  opacity: 1;
+}
+.row-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
 .image_use_case {
   transition: all 250ms;
   width: 450px;
@@ -25,6 +50,7 @@
   display: inline-block;
   text-decoration: underline;
   color: inherit;
+  text-transform: uppercase;
 }
 
 .word_anim:hover {

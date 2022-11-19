@@ -16,7 +16,7 @@ export const NavBar = () => {
       <Grid item className={classes.navbar_item}>
         <Link to="/products" className={classes.navbar_link}>
           <Typography variant="h6" fontWeight={700} color="primary">
-            Product
+            Products
           </Typography>
         </Link>
       </Grid>

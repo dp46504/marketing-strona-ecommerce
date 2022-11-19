@@ -1,0 +1,85 @@
+.image {
+  width: 400px;
+  height: 400px;
+  transition: all 250ms;
+}
+
+.image:hover {
+  transform: scale(1.05) translateY(-0.6rem);
+}
+
+.container {
+  width: 90%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  width: auto;
+}
+
+.description {
+  margin-top: 2rem;
+  max-width: 35ch;
+  letter-spacing: 0.08rem;
+  word-spacing: 0.05rem;
+}
+
+.buttonArea {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.priceInfo,
+.priceInfoPromo {
+  transition: all 250ms;
+}
+
+.priceInfo:hover {
+  transform: scale(1.05);
+  color: #89e286;
+}
+
+.priceInfoPromo {
+  color: rgb(177, 87, 87);
+}
+
+.priceFrom {
+  text-decoration: line-through;
+  color: rgb(177, 87, 87);
+}
+.priceInfoPromo:hover {
+  color: rgb(221, 98, 98);
+  transform: scale(1.05);
+}
+
+.priceButton {
+  text-decoration: none;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.6rem 0.7rem;
+  font-family: "Josefin Sans";
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: #6cb86a;
+  color: #284938;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.priceButton:hover {
+  transform: scale(1.2);
+  background-color: #89e286;
+}

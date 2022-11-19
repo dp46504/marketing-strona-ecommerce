@@ -1,0 +1,13 @@
+.text {
+  animation: pulse 1.5s infinite alternate both;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    filter: opacity(0.6);
+  }
+  to {
+    transform: scale(1.05) translateY(-5px);
+    filter: opacity(1);
+  }
+}

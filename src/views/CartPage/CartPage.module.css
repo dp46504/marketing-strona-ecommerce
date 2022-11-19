@@ -1,0 +1,88 @@
+.container {
+  border: 0.2rem solid var(--primary);
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  grid-template-areas:
+    "itemphoto name name name"
+    "divider divider divider divider"
+    "shipment shipment shipment shipment"
+    "divider2 divider2 divider2 divider2"
+    "price price price paybuttons";
+}
+
+.divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--primary);
+  grid-area: divider;
+}
+.divider2 {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--primary);
+  grid-area: divider2;
+}
+
+.itemphoto {
+  height: 8rem;
+  width: 8rem;
+
+  grid-area: itemphoto;
+}
+
+.itemname {
+  width: auto;
+  height: fit-content;
+  grid-area: name;
+}
+
+.priceContainer {
+  grid-area: price;
+  margin-right: auto;
+}
+
+.paybuttonContainer {
+  height: 100%;
+  justify-self: end;
+  align-self: auto;
+  grid-area: paybuttons;
+  margin-left: auto;
+}
+
+.paybuttonContainer * {
+  margin: 0 0.5rem;
+}
+
+.paymentimages {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  filter: saturate(0.75);
+  transition: all 250ms;
+  animation: anim 2000ms both alternate infinite;
+  cursor: pointer;
+}
+.paymentimages:nth-child(2) {
+  animation-delay: 300ms;
+}
+.paymentimages:last-child {
+  animation-delay: 600ms;
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4px) scale(1.1);
+  }
+}
+
+.shipmentContainer {
+  grid-area: shipment;
+}
