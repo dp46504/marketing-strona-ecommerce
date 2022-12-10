@@ -9,6 +9,8 @@ import "./App.module.css";
 import { ProductPage } from "./views/ProductPage/ProductPage";
 import CartPage from "./views/CartPage/CartPage";
 import FinishPage from "./views/FinishPage/FinishPage";
+import AboutPage from "./views/AboutPage/AboutPage";
+import ContactPage from "./views/ContactPage/ContactPage";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
               </Route>
             </Route>
             <Route path="finish" element={<FinishPage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="contact" element={<ContactPage />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

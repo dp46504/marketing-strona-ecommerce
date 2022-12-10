@@ -32,16 +32,12 @@ export const HomePage = () => {
         </Grid>
 
         {/* First Row */}
-        <Grid
-          container
-          xs={12}
-          sx={{ display: "flex", alignItems: "center", marginTop: "2rem" }}
-        >
-          <Grid item xs={3}>
+        <Grid container xs={11} className={classes.row}>
+          <Grid item xs={5}>
             <img src={roombaImage} className={classes.image} alt="Roomba" />
           </Grid>
 
-          <Grid item xs={9} className={classes.first_row_text}>
+          <Grid item xs={5} className={classes.first_row_text}>
             <Typography
               fontFamily="system-ui"
               variant="h5"
@@ -61,8 +57,8 @@ export const HomePage = () => {
       </Grid>
 
       {/* Second Row */}
-      <Grid container xs={12} className={classes.row}>
-        <Grid item xs={8} className={classes.first_row_text}>
+      <Grid container xs={11} className={classes.row}>
+        <Grid item xs={6} className={classes.first_row_text}>
           <Typography
             fontFamily="system-ui"
             variant="h5"
@@ -88,7 +84,7 @@ export const HomePage = () => {
       </Grid>
 
       {/* Third Row */}
-      <Grid container xs={12} className={classes.row}>
+      <Grid container xs={11} className={classes.row}>
         <Grid item xs={4}>
           <img
             src={roombaImageUseCase2}
@@ -97,7 +93,7 @@ export const HomePage = () => {
           />
         </Grid>
 
-        <Grid item xs={8} className={classes.first_row_text}>
+        <Grid item xs={6} className={classes.first_row_text}>
           <Typography
             fontFamily="system-ui"
             variant="h5"
@@ -117,7 +113,7 @@ export const HomePage = () => {
       {/* Last row */}
       <Grid container className={classes.row}>
         {/* Last title */}
-        <Grid item xs={12}>
+        <Grid item xs={11}>
           <Typography
             fontFamily="Carter One"
             sx={{
@@ -136,8 +132,8 @@ export const HomePage = () => {
           </Typography>
         </Grid>
 
-        <Grid container xs={12} sx={{ display: "flex", alignItems: "center" }}>
-          <Grid item xs={9} className={classes.first_row_text}>
+        <Grid container xs={12} className={classes.row}>
+          <Grid item xs={6} className={classes.first_row_text}>
             <Typography
               fontFamily="system-ui"
               variant="h5"
@@ -154,7 +150,7 @@ export const HomePage = () => {
               obstacle in the future.
             </Typography>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <img src={roombaImage2} className={classes.image} alt="Roomba" />
           </Grid>
         </Grid>

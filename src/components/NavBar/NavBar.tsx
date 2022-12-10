@@ -28,6 +28,14 @@ export const NavBar = () => {
           </Typography>
         </Link>
       </Grid>
+
+      <Grid item className={classes.navbar_item}>
+        <Link to="/about" className={classes.navbar_link}>
+          <Typography variant="h6" fontWeight={700} color="primary">
+            About us
+          </Typography>
+        </Link>
+      </Grid>
     </Grid>
   );
 };
